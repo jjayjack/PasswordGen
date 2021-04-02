@@ -17,94 +17,114 @@ var charSets = {
   available: ""
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword());
-
 //create length   //User inputs character #
 function lengthOfP() {
   var lengthOfPassword = parseInt(prompt("Please enter how many characters are needed in the length of the password."));
   if (lengthOfPassword > 8 && lengthOfPassword < 128){ 
-    return lengthOfPassword;
-  } else {
-    alert ("Please enter a number larger than 8 and less than 128.")
-    lengthOfP();
-  }
-}
+    return lengthOfPassword; 
+  } else if (lengthOfPassword < 8 || lengthOfPassword > 128){
+    alert ("Please enter a number larger than 8 and less than 128.");
+   lengthOfP();}
+} console.log("length of password ",lengthOfPassword); //expect #
+
 
 //User responds whether or not they want to have lowercase letters
 function lowerCaseCase() {
-  var lower = confirm("Please select whether you would like lowercase letters in your password.");
+  var lowerCase = confirm("Please select whether you would like lowercase letters in your password.");
   // press ok to mark true
-  return lower
-}
+  return lowerCase;
+}console.log("lowerCaseCase ",lowerCase);  //expect boolean
 
 //User responds whether or not they want uppercase letters
 function upperCaseCase(){
-  var cap = confirm("Please select whether you would like uppercase letters in your password.");
-    return cap 
-}
+  var upperCase = confirm("Please select whether you would like uppercase letters in your password.");
+    return upperCase;
+}console.log("upperCaseCase ",upperCase);  //expect boolean
 
 
 //User responds whether or not they want numbers
 function numbers(){
-  var num = confirm("Please select whether you would like numbers in your password.");
-    return num
-}
+  var numeric = confirm("Please select whether you would like numbers in your password.");
+    return numeric;
+}console.log("numbers ",numeric);  //expect boolean
 
 //User responds whether or not they want special characters
 function schar(){
-  var schar = confirm("Please select whether you would like special characters in your password.");
-    return schar
-}
+  var special = confirm("Please select whether you would like special characters in your password.");
+    return special;
+}console.log("schar ",special); //expect boolean
 
 // Write password to the #password input
-function writePassword() {
-  console.log("working"); //testing to make sure function is coded
+function writePassword() { //triggering that function should start once event occurs
+  console.log("write password function"); //testing to make sure function is coded
+  
 //collecting data from User
   var lengthOfPassword = lengthOfP();
   var lowCase = lowerCaseCase();
   var uppCase = upperCaseCase();
   var numnum = numbers();
   var charsp = schar();
-  var used = [];
-  var type = [];
+  // var used = [];
+  // var type = [];
   var passwordToReturn = ""
 
     // initial expression: for each character selected by the user, pick at out values from each selection
    // condition expression: condition must stay true to run - true until < lengthOfPassword
    // set up increment expression to make sure that each var is run through
    //need statements to execute -- runs through and collects variables chosen by user into an array
-  if (lowCase == true) {
-    charSets.available += charSets.lower;
-// randomize selection from lowerCase, math floor will pull the largest value from array 
-    var low = lowerCase[Math.floor(Math.random()*lowerCase.length)];
-//add variables to array 
-      used.push(low);
-      //adding values to array from what was randomly chosen -- tells program it needs to keep track of type ""
-      type.push("low");
+  if (lowCase == true) { //floor makes product into whole number
+    var lowlow = lowerCase[Math.floor(Math.random() * lowerCase.length)];
+    charSets.available += charSets.lowlow;
+      // randomize selection from lowerCase, math floor will pull the largest value from array 
+        // var low = lowerCase[Math.floor(Math.random()*lowerCase.length)];
+        //add variables to array 
+          // used.push(low);
+            //adding values to array from what was randomly chosen -- tells program it needs to keep track of type ""
+            // type.push("low");
       }
 
   if (uppCase == true) {
 //randomize selection from upperCase, math floor will pull the largest value from array and math.random will work on array length to randomize selection
+    // charSets.available += charSets.upper;
     var cap = upperCase[Math.floor(Math.random()*upperCase.length)];
-      used.push(cap);
-      type.push("cap");     
+    charSets.available += charSets.cap;
+      // used.push(cap);
+      // type.push("cap");     
       }
 
   if (numnum == true) {
 //randomize selection from numeric
     var num = numeric[Math.floor(Math.random()*numeric.length)];
-      used.push(num);
-      type.push("num");
+    charSets.availabile += charSets.num;
+      // used.push(num);
+      // type.push("num");
       }
 
   if (charsp == true) {
 //randomize selection from special characters
     var schar = special[Math.floor(Math.random()*special.length)];
-      used.push(schar);
-      type.push("schar");
+    charSets.available += charSets.schar;
+      // used.push(schar);
+      // type.push("schar");
       }
 //from if statements only have one value from each 
+  
+  // set variable for each function to run on for loop
+  for (var i = 0; i < parseInt(lengthOfPassword); i++ ){
+    // we want to get one random character from charset.available
+      // we need a random number between 0 and charset.available.length
+    var randomIndex = Math.floor(Math.random()*charSets.available.length);
+    console.log(randomIndex);
+      // use random number to get a character from the charset.avaialbe
+    var randomChar = charSets.available[randomChar];
+    console.log(randomChar);
+    passwordToReturn += randomChar;
+    console.log(passwordToReturn);
+  }
+  return password();
+}
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword());
 
 //starting loop which runs through each variable selected by user until password is less than the length of password minus the array length, 
 //after each instance the loop will move up by one
@@ -120,37 +140,5 @@ function writePassword() {
   //     var lowerC = random[Math.floor(Math.random()*random.length)];
 
   //   } 
-
-    
-    
-    
-    
-  
-  // set variable for each function to run on for loop
-  for (var i = 0; i < parseInt(lengthOfPassword); i++ ){
-    // we want to get one random character from charset.available
-      // we need a random number between 0 and charset.available.length
-    var randomIndex = Math.floor(Math.random()*charSets.available.length);
-    console.log(randomIndex);
-      // use random number to get a character from the charset.avaialbe
-    var randomChar = charSets.available[randomChar];
-    console.log(randomChar);
-    passwordToReturn += randomChar;
-    console.log(passwordToReturn);
-  }
-  return password();
-    // return writePassword();
-// password(){
-
-
-//   writePassword();
-
-
-}
-//   passwordText.value = password;
-  
-//     writePassword(); //calls upon what was collected from function
-//   }
-
 
 
