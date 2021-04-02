@@ -4,7 +4,6 @@ var generateBtn = document.querySelector("#generate");
 //Variables
 // var password = generatePassword();
 var passwordText = document.querySelector("#password");
-var lengthOfPassword;
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var numeric = ["0","1","2","3","4","5","6","7","8","9"];
@@ -14,8 +13,6 @@ var special = ["!","@","#","$","%","^","&","*","(",")","-","_","=","+","`","~","
 function lengthOfP() {
   var lengthOfPassword = parseInt(prompt("Please enter how many characters are needed in the length of the password."));
   if (lengthOfPassword > 8 && lengthOfPassword < 128){ 
-    console.log(lengthOfPassword);
-    lowerCaseCase(); 
     return lengthOfPassword;
   } else {
     alert ("Please enter a number larger than 8 and less than 128.")
@@ -23,76 +20,100 @@ function lengthOfP() {
   }
 }
 
-//create variable for lowercase //User responds whether or not they want to have characters
+//User responds whether or not they want to have lowercase letters
 function lowerCaseCase() {
-  var lower = prompt("Please select whether you would like lowercase letters in your password.");
-    if (lower == "yes"){
-    // randomize selection from lowerCase, math floor will pull the largest value from array 
-      lower = lowerCase[Math.floor(Math.random()*lowerCase.length)];
-      console.log(lower);
-      capital();
-      }
-    else if (lower == "no"){ 
-      capital();}
-    else {alert("Please type yes or no.")
-  lowerCaseCase();}
+  var lower = confirm("Please select whether you would like lowercase letters in your password.");
+  // press ok to mark true
+  return lower
 }
 
-//create function for upperCase
-function capital(){
-  var cap = prompt("Please select whether you would like uppercase letters in your password.");
-    if (cap == "yes"){
-  //randomize selection from upperCase, math floor will pull the largest value from array and math.random will work on array length to randomize selection
-      cap = upperCase[Math.floor(Math.random()*upperCase.length)];
-      console.log(cap);
-      numbers();
-      }
-    else if (cap == "no"){
-      numbers();
-  } else {alert("Please type yes or no."); 
-  capital();}
+//User responds whether or not they want uppercase letters
+function upperCaseCase(){
+  var cap = confirm("Please select whether you would like uppercase letters in your password.");
+    return cap 
 }
 
-//create numeric
+
+//User responds whether or not they want numbers
 function numbers(){
-  var num = prompt("Please select whether you would like numbers in your password.")
-    if (num == "yes"){
-      num = numeric[Math.floor(Math.random()*numeric.length)];
-      console.log(num);
-      schar();
-      }
-    else if (num =="no"){
-    schar();
-    } else {alert("Please type yes or no.");
-    numbers();}
-  }
+  var num = confirm("Please select whether you would like numbers in your password.");
+    return num
+}
 
-//create special
+//User responds whether or not they want special characters
 function schar(){
-  var schar = prompt("Please select whether you would like special characters in your password.")
-    if (schar == "yes"){
-      schar = special[Math.floor(Math.random()*special.length)];
-      console.log(schar);
-      }
-    }
+  var schar = confirm("Please select whether you would like special characters in your password.");
+    return schar
+}
 
 // Write password to the #password input
 function writePassword() {}
   console.log("working"); //testing to make sure function is coded
+  lengthOfP();
+  lowerCaseCase();
+  upperCaseCase();
+  numbers();
+  schar();
+// set variable for each function to run on for loop
+  var used
+  var lengthOfPassword = lengthOfP();
+  var lowCase = lowerCaseCase();
+  var uppCase = upperCaseCase();
+  var numnum = numbers();
+  var charsp = schar();
+  var used = [];
+  var type = [];
+// initial expression: for each character selected by the user, pick at out values from each selection
+// condition expression: condition must stay true to run - true until < lengthOfPassword
+// set up increment expression to make sure that each var is run through
+//need statements to execute -- runs through and collects variables chosen by user into an array
+  if (lowCase == true) {
+// randomize selection from lowerCase, math floor will pull the largest value from array 
+    var low = lowerCase[Math.floor(Math.random()*lowerCase.length)];
+//add variables to array 
+      used.push(low);
+      //create array from what was inputted into array -- tells program it needs to keep track of type
+      type.push("low");
+      }
+  if (uppCase == true) {
+//randomize selection from upperCase, math floor will pull the largest value from array and math.random will work on array length to randomize selection
+    var cap = upperCase[Math.floor(Math.random()*upperCase.length)];
+      used.push(cap);
+      type.push("cap");     
+      }
+  if (numnum == true) {
+//randomize selection from numeric
+    var num = numeric[Math.floor(Math.random()*numeric.length)];
+      used.push(num);
+      type.push("num");
+      }
+  if (charsp == true) {
+//randomize selection from special characters
+    var schar = special[Math.floor(Math.random()*special.length)];
+      used.push(schar);
+      type.push("schar");
+      }
+      //only have one value from each 
 
-lengthOfP();
-lowerCaseCase();
-capital();
-numbers();
-schar();
+//
+  for (x = 0; x < lengthOfPassword - type.length; x ++) {
+    //Running code to randomize which math.floor will return the largest integer within 0-1 multiplied by the amount of values within the array
+    var random = Math.floor(Math.random() * type.length); 
+    // create array of the typeof data within array used
+    if (type [random] == "low"){
 
-  
+    } 
+
+    
+    
+
+
+  }
 
     // return writePassword();
 // password(){
 
 
-// } 
 //   writePassword();
 
 
