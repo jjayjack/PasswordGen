@@ -38,3 +38,10 @@ return password generated in text box
 ![image](https://user-images.githubusercontent.com/79474830/113373113-c9018c80-932f-11eb-8fa8-c6f114e8fdd0.png)
 ![image](https://user-images.githubusercontent.com/79474830/113373130-d0c13100-932f-11eb-993c-f12623993eb0.png)
 
+//Updated Screenshots of finished code  //
+![image](https://user-images.githubusercontent.com/79474830/113465177-b783b780-93f7-11eb-8b7b-661817bf397e.png)
+![image](https://user-images.githubusercontent.com/79474830/113465184-c5d1d380-93f7-11eb-910e-285bf1b2dbfe.png)
+![image](https://user-images.githubusercontent.com/79474830/113465193-cff3d200-93f7-11eb-935f-62f6167f1b41.png)
+![image](https://user-images.githubusercontent.com/79474830/113465203-daae6700-93f7-11eb-96b9-73c31c845c73.png)
+![image](https://user-images.githubusercontent.com/79474830/113465216-eb5edd00-93f7-11eb-96bc-398b1898fbf5.png)
+
