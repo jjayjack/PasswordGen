@@ -23,6 +23,7 @@ function writePassword() { //triggering that function should start once event oc
   var numnum = numbers();
   var charsp = schar();
   passwordToReturn = "";
+  charSets.available -="";
 
   generatePassword(); console.log("textarea ", passwordToReturn);
 
