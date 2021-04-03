@@ -25,7 +25,7 @@ function writePassword() { //triggering that function should start once event oc
   passwordToReturn = "";
   charSets.available -="";
 
-  generatePassword(); console.log("textarea ", passwordToReturn);
+  generatePassword(); 
 
   if (lowCase == true) { //floor makes product into whole number
     var lowlow = charSets.lower[Math.floor(Math.random() * charSets.lower.length)];
@@ -43,14 +43,13 @@ function writePassword() { //triggering that function should start once event oc
     var num = charSets.numeric[Math.floor(Math.random()*charSets.numeric.length)];
     passwordToReturn += num;
     charSets.available += charSets.numeric;
-    console.log(num);
-      }
+       }
 
   if (charsp == true) {
     var spech = charSets.special[Math.floor(Math.random()*charSets.special.length)];
     passwordToReturn += spech;
     charSets.available += charSets.special;
-      console.log(spech);}
+ }
 
 var initial = passwordToReturn.length;
   for (var i = 0; i < parseInt(lengthOfPassword) - initial; i++ ){
