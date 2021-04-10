@@ -1,4 +1,8 @@
 # PasswordGen
+
+//    Deployed URL    \\
+https://jjayjack.github.io/PasswordGen/
+
 // PseudoCode //
 create var for first password requirement
 
