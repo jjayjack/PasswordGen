@@ -1,31 +1,48 @@
-# PasswordGen
+# Password Gen
+ 
+  ## Description:
+  Creating a unique password is required to navigate most sites on the Web and coming up with an easy to remember and harder to guess is what makes a Password generator worthwhile. Within this application a user is met with a page displaying a text box and a button. Through the making of the Password Gen I learned the use of Math functions that would randomize characters to be used within a generated password. 
+  ## Table of Contents
+  - [Links](#links)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#contributes)
+  - [License](#license)
+  - [Tests](#tests)
+  - [Questions](#email)
 
-//    Deployed URL    \\
-https://jjayjack.github.io/PasswordGen/
+  ## Links:
+  [Deployed Url](https://jjayjack.github.io/PasswordGen/)
 
-// PseudoCode //
-create var for first password requirement
+  ## Installation:
+  Dependencies include a basic knowledge of Javascript.
 
-create function to randomize requirement if yes, if no move to next requirement
+  ## Usage:
+  Within this application, a user is met with a page displaying a text box and a button. Once pressing on the button, the user is prompted with an alert asking for number of characters for the [password](#password). If user does not respond with a correct integer expecting they will be alerted of [error](#error) and re-prompted. From there they are asked if they would like [lowercase](#lowercase) letters, [uppercase](#uppercase) letters, [numbers](#numbers), and [special characters](#specialChar). From their selections, a [generated password](#generatedPassword) will be displayed within the textbox from the starting page. 
+  ### Screenshots:
+   #### Starting variables for all items available for passwords
+   (initial)
+  ![image](https://user-images.githubusercontent.com/79474830/122602730-f14c7d80-d038-11eb-9c14-0250e7180914.png)
+  (final)
+  ![image](https://user-images.githubusercontent.com/79474830/122603372-d62e3d80-d039-11eb-8013-72b88f5eea33.png)
+  
+  #### Password function for number of characters greater than 8 and less than 128
+  ![image](https://user-images.githubusercontent.com/79474830/122602848-1a6d0e00-d039-11eb-8d33-014c191f61a2.png)
+  https://user-images.githubusercontent.com/79474830/113372878-3a8d0b00-932f-11eb-968d-b1662420eab6.png
+  #### Error if integer between 8 and 128 is not found within user response
+  ![image](https://user-images.githubusercontent.com/79474830/113372878-3a8d0b00-932f-11eb-968d-b1662420eab6.png)
+  
+  #### Lowercase function
+  
+  
 
-create var for length
-set restrictions for length to be 8<= x >= 128 characters
-create function to randomize requirement if yes, if no: move to next requirement
+  
 
-create var for lowercase
-create function to randomize requirement if yes, if no move to next requirement
 
-create var for uppercase
-create function to randomize requirement if yes, if no move to next requirement
+  ## Questions:
+  jocelynjayjack@gmail.com
+  github.com/jjayjack
 
-create var for numeric
-create function to randomize requirement if yes, if no move to next requirement
-
-create var for special characters
-create function to randomize requirement if yes, if no move to next requirement
-
-create function to validate selections
-return password generated in text box
 
 //      Screenshots of initial Javascript code for Password Generator     \\
 ![image](https://user-images.githubusercontent.com/79474830/113372683-d8340a80-932e-11eb-860c-15e934e8303c.png)
@@ -33,7 +50,7 @@ return password generated in text box
 ![image](https://user-images.githubusercontent.com/79474830/113372735-f437ac00-932e-11eb-902e-0f0240741bd0.png)
 ![image](https://user-images.githubusercontent.com/79474830/113372789-09143f80-932f-11eb-8009-9961d8a9fbe0.png)
 //      Screenshots of initial Webpage      \\
-![image](https://user-images.githubusercontent.com/79474830/113372878-3a8d0b00-932f-11eb-968d-b1662420eab6.png)
+
 ![image](https://user-images.githubusercontent.com/79474830/113372972-69a37c80-932f-11eb-90b4-56b44a87d12a.png)
 ![image](https://user-images.githubusercontent.com/79474830/113372998-7c1db600-932f-11eb-8e4e-38516e2860f7.png)
 ![image](https://user-images.githubusercontent.com/79474830/113373054-9bb4de80-932f-11eb-8e88-36ffb7f613c1.png)
