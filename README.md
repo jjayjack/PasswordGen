@@ -18,7 +18,7 @@
   Dependencies include a basic knowledge of Javascript.
 
   ## Usage:
-  Within this application, a user is met with a page displaying a text box and a button. Once pressing on the button, the user is prompted with an alert asking for number of characters for the [password](#password). If user does not respond with a correct integer expecting they will be alerted of [error](#error) and re-prompted. From there they are asked if they would like [lowercase](#lowercase) letters, [uppercase](#uppercase) letters, [numbers](#numbers), and [special characters](#specialChar). From their selections, a [generated password](#generatedPassword) will be displayed within the textbox from the starting page. 
+  Within this application, a user is met with a page displaying a text box and a button. Once pressing on the button, the user is prompted with an alert asking for number of characters for the [password](#password). If user does not respond with a correct integer expecting they will be alerted of [error](#error) and re-prompted. From there they are asked if they would like [lowercase](#lowercase) letters, [uppercase](#uppercase) letters, [numbers](#numbers), and [special characters](#special). From their selections, if statements will check to see [if](#if) selection was true then randomize so that at least one of each case if selected then randomized to generate the final password[generated password](#generated) will be displayed within the textbox from the starting page. 
   ### Screenshots:
    #### Starting variables for all items available for passwords
    (initial)
@@ -34,6 +34,30 @@
   ![image](https://user-images.githubusercontent.com/79474830/113372972-69a37c80-932f-11eb-90b4-56b44a87d12a.png)
   
   #### Lowercase function
+  ![image](https://user-images.githubusercontent.com/79474830/122604088-ff030280-d03a-11eb-85d2-21f8eb8eabba.png)
+  
+  #### Uppercase function
+  ![image](https://user-images.githubusercontent.com/79474830/122604148-193ce080-d03b-11eb-84d2-ffc0911a00b2.png)
+  
+  #### Numbers function
+  ![image](https://user-images.githubusercontent.com/79474830/122604184-28239300-d03b-11eb-83e6-1760d6d4c28f.png)
+  
+  #### Special Characters function
+  ![image](https://user-images.githubusercontent.com/79474830/113465203-daae6700-93f7-11eb-96b9-73c31c845c73.png)
+  
+  #### If cases to determine which variables were used and randomly generating which are within generated password
+  ![image](https://user-images.githubusercontent.com/79474830/122604727-0a0a6280-d03c-11eb-88e1-60793afae777.png)
+  ![image](https://user-images.githubusercontent.com/79474830/122604747-15f62480-d03c-11eb-8480-e388ebe325a9.png)
+ 
+  
+  #### Generated Password
+  ![image](https://user-images.githubusercontent.com/79474830/122604793-25756d80-d03c-11eb-9ff9-767c4ca1cd65.png)
+  ![image](https://user-images.githubusercontent.com/79474830/113465216-eb5edd00-93f7-11eb-96bc-398b1898fbf5.png)
+  
+  
+
+  
+
   
   
 
@@ -64,6 +88,6 @@
 ![image](https://user-images.githubusercontent.com/79474830/113465177-b783b780-93f7-11eb-8b7b-661817bf397e.png)
 ![image](https://user-images.githubusercontent.com/79474830/113465184-c5d1d380-93f7-11eb-910e-285bf1b2dbfe.png)
 ![image](https://user-images.githubusercontent.com/79474830/113465193-cff3d200-93f7-11eb-935f-62f6167f1b41.png)
-![image](https://user-images.githubusercontent.com/79474830/113465203-daae6700-93f7-11eb-96b9-73c31c845c73.png)
-![image](https://user-images.githubusercontent.com/79474830/113465216-eb5edd00-93f7-11eb-96bc-398b1898fbf5.png)
+
+
 
