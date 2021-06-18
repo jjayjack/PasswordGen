@@ -28,9 +28,10 @@
   
   #### Password function for number of characters greater than 8 and less than 128
   ![image](https://user-images.githubusercontent.com/79474830/122602848-1a6d0e00-d039-11eb-8d33-014c191f61a2.png)
-  https://user-images.githubusercontent.com/79474830/113372878-3a8d0b00-932f-11eb-968d-b1662420eab6.png
+ ![image](https://user-images.githubusercontent.com/79474830/113372878-3a8d0b00-932f-11eb-968d-b1662420eab6.png)
   #### Error if integer between 8 and 128 is not found within user response
-  ![image](https://user-images.githubusercontent.com/79474830/113372878-3a8d0b00-932f-11eb-968d-b1662420eab6.png)
+  
+  ![image](https://user-images.githubusercontent.com/79474830/113372972-69a37c80-932f-11eb-90b4-56b44a87d12a.png)
   
   #### Lowercase function
   
@@ -51,7 +52,7 @@
 ![image](https://user-images.githubusercontent.com/79474830/113372789-09143f80-932f-11eb-8009-9961d8a9fbe0.png)
 //      Screenshots of initial Webpage      \\
 
-![image](https://user-images.githubusercontent.com/79474830/113372972-69a37c80-932f-11eb-90b4-56b44a87d12a.png)
+
 ![image](https://user-images.githubusercontent.com/79474830/113372998-7c1db600-932f-11eb-8e4e-38516e2860f7.png)
 ![image](https://user-images.githubusercontent.com/79474830/113373054-9bb4de80-932f-11eb-8e88-36ffb7f613c1.png)
 ![image](https://user-images.githubusercontent.com/79474830/113373076-ac655480-932f-11eb-8334-c5d9c4bb0e8f.png)
